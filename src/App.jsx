@@ -1,8 +1,7 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Admin from "./Pages/Admin";
-import AppLayout from "./Features/Dashboard/AppLayout";
+import AppLayout from "./Components/AppLayout";
 import Teachers from "./Pages/Teachers";
 import Students from "./Pages/Students";
 import Dashboard from "./Pages/Dashboard";
@@ -14,6 +13,10 @@ import Notice from "./Pages/Notice";
 import Exam from "./Pages/Exam";
 import Hostel from "./Pages/Hostel";
 import Reviews from "./Pages/Reviews";
+import Attendance from "./Pages/Attendance";
+import TeachersAttendance from "./Features/Attendance/TeachersAttendance";
+import StudentsAttendance from "./Features/Attendance/StudentsAttendance";
+import StaffsAttendance from "./Features/Attendance/StaffsAttendance";
 
 const App = () => {
   return (
@@ -22,7 +25,12 @@ const App = () => {
         <Routes>
           <Route element={<AppLayout />}>
             <Route element={<Dashboard />} path="/" />
-            <Route element={<Admin />} path="/admin" />
+            <Route element={<Attendance />} path="/attendance">
+              <Route index element={<TeachersAttendance />} />
+              <Route element={<TeachersAttendance />} path="teachers" />
+              <Route element={<StudentsAttendance />} path="students" />
+              <Route element={<StaffsAttendance />} path="staffs" />
+            </Route>
             <Route element={<Teachers />} path="/teachers" />
             <Route element={<Students />} path="/students" />
             <Route element={<Library />} path="/Library" />

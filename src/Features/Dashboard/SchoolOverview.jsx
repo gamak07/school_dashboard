@@ -18,7 +18,7 @@ const SchoolOverview = () => {
       <div className="">
         {facultyList.map((faculty) => (
           <div key={faculty.id} className="flex justify-between items-center p-[5px] border border-lightgray rounded-[10px]">
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-[6px]">
               <FaUserFriends className="w-[1rem] h-[1rem] text-accent" />
               <span className="font-semibold">{faculty.role}</span>
             </div>

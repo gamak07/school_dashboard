@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const Sidebar = () => {
   const contents = [
     { name: "Dashboard", link: "/" },
-    { name: "Admin", link: "/admin" },
+    { name: "Attendance", link: "/attendance" },
     { name: "Teachers", link: "/teachers" },
     { name: "Students", link: "/students" },
     { name: "Library", link: "/library" },

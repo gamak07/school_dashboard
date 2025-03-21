@@ -18,6 +18,10 @@
   --color-secondary: #9ed6ab;
   --color-accent: #6acd81;
   --color-lightgray: #e0e0e0;
+  --color-darkgray: #7e7e7c;
+  --color-green: #02ca42;
+  --color-orange: #debe5a;
+  --color-red: #e21228;
 }
 
 @theme {
