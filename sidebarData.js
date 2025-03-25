@@ -4,10 +4,10 @@ export const sidebarData = [
       name: "Admission",
       subs: [
         { name: "Applications Received", link: "/applications" },
-        { name: "Entrance Examination", link: "" },
-        { name: "Entrance Exam Scores", link: "" },
-        { name: "Entrance Exam Scores Review", link: "" },
-        { name: "Settings", link: "" },
+        { name: "Entrance Examination", link: "/entrance_exam" },
+        { name: "Entrance Exam Scores", link: "/entrance_exam_scores" },
+        { name: "Entrance Exam Scores Review", link: "/review_exam_scores" },
+        { name: "Settings", link: "/admission_settings" },
       ],
     },
     {

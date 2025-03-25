@@ -2,17 +2,14 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AppLayout from "./Components/AppLayout";
-import Teachers from "./Pages/Teachers";
-import Students from "./Pages/Students";
+
 import Dashboard from "./Pages/Dashboard";
-import Library from "./Pages/Admission/AdmissionSettings";
 import ApplicationsReceived from "./Pages/Admission/ApplicationsReceived";
-import Parents from "./Pages/Parents";
-import Finance from "./Pages/Admission/InputEntranceExam";
-import Notice from "./Pages/Notice";
-import Exam from "./Pages/Admission/EntranceExamination";
-import Hostel from "./Pages/Admission/ReviewEntranceExam";
-import Reviews from "./Pages/Reviews";
+
+import EntranceExamination from "./Pages/Admission/EntranceExamination";
+import InputEntranceExam from "./Pages/Admission/InputEntranceExam";
+import ReviewEntranceExam from "./Pages/Admission/ReviewEntranceExam";
+import AdmissionSettings from "./Pages/Admission/AdmissionSettings";
 
 const App = () => {
   return (
@@ -23,6 +20,10 @@ const App = () => {
             <Route index element={<Dashboard />} />
             <Route element={<Dashboard />} path="/" />
             <Route element={<ApplicationsReceived />} path="/applications" />
+            <Route element={<EntranceExamination />} path="/entrance_exam" />
+            <Route element={<InputEntranceExam />} path="/entrance_exam_scores" />
+            <Route element={<ReviewEntranceExam />} path="/review_exam_scores" />
+            <Route element={<AdmissionSettings />} path="/admission_settings" />
           </Route>
         </Routes>
       </BrowserRouter>
