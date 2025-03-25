@@ -10,6 +10,8 @@ import EntranceExamination from "./Pages/Admission/EntranceExamination";
 import InputEntranceExam from "./Pages/Admission/InputEntranceExam";
 import ReviewEntranceExam from "./Pages/Admission/ReviewEntranceExam";
 import AdmissionSettings from "./Pages/Admission/AdmissionSettings";
+import ViewStudents from "./Pages/People/Students/ViewStudents";
+import EnrollStudents from "./Pages/People/Students/EnrollStudents";
 
 const App = () => {
   return (
@@ -24,6 +26,8 @@ const App = () => {
             <Route element={<InputEntranceExam />} path="/entrance_exam_scores" />
             <Route element={<ReviewEntranceExam />} path="/review_exam_scores" />
             <Route element={<AdmissionSettings />} path="/admission_settings" />
+            <Route element={<ViewStudents />} path="/students" />
+            <Route element={<EnrollStudents />} path="/enroll" />
           </Route>
         </Routes>
       </BrowserRouter>

@@ -16,9 +16,8 @@ export const sidebarData = [
         {
           name: "Students",
           subSubs: [
-            { name: "View Students", link: "" },
-            { name: "Enroll Student", link: "" },
-            { name: "Bulk-enroll Students(Excel Import)", link: "" },
+            { name: "View Students", link: "/students" },
+            { name: "Enroll Student", link: "/enroll" },
             {
               name: "Students Promotion / Class Transfer / Graduation",
               link: "",
