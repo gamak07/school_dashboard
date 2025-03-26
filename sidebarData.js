@@ -20,12 +20,12 @@ export const sidebarData = [
             { name: "Enroll Student", link: "/enroll" },
             {
               name: "Students Promotion / Class Transfer / Graduation",
-              link: "",
+              link: "/promotions",
             },
-            { name: "Student Tags", link: "" },
-            { name: "Graduated Alumni", link: "" },
-            { name: "Communication Book", link: "" },
-            { name: "Birthday Anniversaries", link: "" },
+            { name: "Student Tags", link: "/tags" },
+            { name: "Graduated Alumni", link: "/alumni" },
+            { name: "Communication Book", link: "/communication" },
+            { name: "Birthday Anniversaries", link: "/birthdays" },
           ],
         },
         {

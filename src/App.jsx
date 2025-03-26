@@ -12,6 +12,11 @@ import ReviewEntranceExam from "./Pages/Admission/ReviewEntranceExam";
 import AdmissionSettings from "./Pages/Admission/AdmissionSettings";
 import ViewStudents from "./Pages/People/Students/ViewStudents";
 import EnrollStudents from "./Pages/People/Students/EnrollStudents";
+import Promotions from "./Pages/People/Students/Promotions";
+import Tags from "./Pages/People/Students/Tags";
+import Alumni from "./Pages/People/Students/Alumni";
+import CommunicationBook from "./Pages/People/Students/CommunicationBook";
+import Birthday from "./Pages/People/Students/Birthday";
 
 const App = () => {
   return (
@@ -28,6 +33,11 @@ const App = () => {
             <Route element={<AdmissionSettings />} path="/admission_settings" />
             <Route element={<ViewStudents />} path="/students" />
             <Route element={<EnrollStudents />} path="/enroll" />
+            <Route element={<Promotions />} path="/promotions" />
+            <Route element={<Tags />} path="/tags" />
+            <Route element={<Alumni />} path="/alumni" />
+            <Route element={<CommunicationBook />} path="/communication" />
+            <Route element={<Birthday />} path="/birthdays" />
           </Route>
         </Routes>
       </BrowserRouter>
