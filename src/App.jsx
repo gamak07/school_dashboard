@@ -17,6 +17,16 @@ import Tags from "./Pages/People/Students/Tags";
 import Alumni from "./Pages/People/Students/Alumni";
 import CommunicationBook from "./Pages/People/Students/CommunicationBook";
 import Birthday from "./Pages/People/Students/Birthday";
+import ParentsAndGuardian from "./Pages/People/Parents/ParentsAndGuardian";
+import Families from "./Pages/People/Parents/Families";
+import Teachers from "./Pages/People/TeachersandStaffs/Teachers";
+import AdmissionOfficer from "./Pages/People/TeachersandStaffs/AdmissionOfficer";
+import Accountant from "./Pages/People/TeachersandStaffs/Accountant";
+import Librarian from "./Pages/People/TeachersandStaffs/Librarian";
+import HostelManager from "./Pages/People/TeachersandStaffs/HostelManager";
+import TransportManager from "./Pages/People/TeachersandStaffs/TransportManager";
+import GeneralStaffs from "./Pages/People/TeachersandStaffs/GeneralStaffs";
+import Administrator from "./Pages/People/TeachersandStaffs/Administrator";
 
 const App = () => {
   return (
@@ -38,6 +48,16 @@ const App = () => {
             <Route element={<Alumni />} path="/alumni" />
             <Route element={<CommunicationBook />} path="/communication" />
             <Route element={<Birthday />} path="/birthdays" />
+            <Route element={<ParentsAndGuardian />} path="/parents" />
+            <Route element={<Families />} path="/families" />
+            <Route element={<Teachers />} path="/teachers" />
+            <Route element={<AdmissionOfficer />} path="/admission_officer" />
+            <Route element={<Accountant />} path="/accountant" />
+            <Route element={<Librarian />} path="/librarian" />
+            <Route element={<HostelManager />} path="/hostel_manager" />
+            <Route element={<TransportManager />} path="/transport_manager" />
+            <Route element={<GeneralStaffs />} path="/general_staffs" />
+            <Route element={<Administrator />} path="/admin" />
           </Route>
         </Routes>
       </BrowserRouter>
