@@ -56,10 +56,10 @@ export const sidebarData = [
         {
           name: "Learning",
           subSubs: [
-            { name: "Classes", link: "/students" },
-            { name: "Subjects", link: "" },
-            { name: "Virtual Classroom", link: "" },
-            { name: "Timetable / Schedule", link: "" },
+            { name: "Classes", link: "/classes" },
+            { name: "Subjects", link: "/subjects" },
+            { name: "Virtual Classroom", link: "/virtual" },
+            { name: "Timetable / Schedule", link: "/schedule" },
           ],
         },
         {

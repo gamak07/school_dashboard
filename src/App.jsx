@@ -27,6 +27,10 @@ import HostelManager from "./Pages/People/TeachersandStaffs/HostelManager";
 import TransportManager from "./Pages/People/TeachersandStaffs/TransportManager";
 import GeneralStaffs from "./Pages/People/TeachersandStaffs/GeneralStaffs";
 import Administrator from "./Pages/People/TeachersandStaffs/Administrator";
+import Classes from "./Pages/Academics/Learning/Classes";
+import Subjects from "./Pages/Academics/Learning/Subjects";
+import Virtual from "./Pages/Academics/Learning/Virtual";
+import Schedule from "./Pages/Academics/Learning/Schedule";
 
 const App = () => {
   return (
@@ -58,6 +62,11 @@ const App = () => {
             <Route element={<TransportManager />} path="/transport_manager" />
             <Route element={<GeneralStaffs />} path="/general_staffs" />
             <Route element={<Administrator />} path="/admin" />
+            <Route element={<Administrator />} path="/admin" />
+            <Route element={<Classes />} path="/classes" />
+            <Route element={<Subjects />} path="/subjects" />
+            <Route element={<Virtual />} path="/virtual" />
+            <Route element={<Schedule />} path="/schedule" />
           </Route>
         </Routes>
       </BrowserRouter>
