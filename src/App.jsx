@@ -31,6 +31,10 @@ import Classes from "./Pages/Academics/Learning/Classes";
 import Subjects from "./Pages/Academics/Learning/Subjects";
 import Virtual from "./Pages/Academics/Learning/Virtual";
 import Schedule from "./Pages/Academics/Learning/Schedule";
+import QuestionsBank from "./Pages/Academics/CBT/QuestionsBank";
+import Instructions from "./Pages/Academics/CBT/Instructions";
+import Schedules from "./Pages/Academics/CBT/Schedules";
+import Scores from "./Pages/Academics/CBT/Scores";
 
 const App = () => {
   return (
@@ -67,6 +71,10 @@ const App = () => {
             <Route element={<Subjects />} path="/subjects" />
             <Route element={<Virtual />} path="/virtual" />
             <Route element={<Schedule />} path="/schedule" />
+            <Route element={<QuestionsBank />} path="/questions_bank" />
+            <Route element={<Instructions />} path="/instructions" />
+            <Route element={<Schedules />} path="/schedules" />
+            <Route element={<Scores />} path="/scores" />
           </Route>
         </Routes>
       </BrowserRouter>

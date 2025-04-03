@@ -65,11 +65,10 @@ export const sidebarData = [
         {
           name: "CBT",
           subSubs: [
-            { name: "Question Bank", link: "/students" },
-            { name: "Instruction Sets", link: "" },
-            { name: "CBT Schedules", link: "" },
-            { name: "CBT Scores", link: "" },
-            { name: "CBT Practice", link: "" },
+            { name: "Questions Bank", link: "/questions_bank" },
+            { name: "Instruction Sets", link: "/instructions" },
+            { name: "CBT Schedules", link: "/schedules" },
+            { name: "CBT Scores", link: "/scores" },
           ],
         },
         {
