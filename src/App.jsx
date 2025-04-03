@@ -35,6 +35,9 @@ import QuestionsBank from "./Pages/Academics/CBT/QuestionsBank";
 import Instructions from "./Pages/Academics/CBT/Instructions";
 import Schedules from "./Pages/Academics/CBT/Schedules";
 import Scores from "./Pages/Academics/CBT/Scores";
+import Terms from "./Pages/Academics/Exams/Terms";
+import Reports from "./Pages/Academics/Exams/Reports";
+import Timetables from "./Pages/Academics/Exams/Timetables";
 
 const App = () => {
   return (
@@ -75,6 +78,9 @@ const App = () => {
             <Route element={<Instructions />} path="/instructions" />
             <Route element={<Schedules />} path="/schedules" />
             <Route element={<Scores />} path="/scores" />
+            <Route element={<Terms />} path="/terms" />
+            <Route element={<Reports />} path="/reports" />
+            <Route element={<Timetables />} path="/timetables" />
           </Route>
         </Routes>
       </BrowserRouter>

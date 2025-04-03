@@ -74,19 +74,11 @@ export const sidebarData = [
         {
           name: "Exams",
           subSubs: [
-            { name: "Terms / Periods", link: "/students" },
-            { name: "Exam / Reports", link: "" },
-            { name: "Exam Timetables", link: "" },
-            { name: "Schedule Exam", link: "" },
+            { name: "Terms / Periods", link: "/terms" },
+            { name: "Exam / Reports", link: "/reports" },
+            { name: "Exam Timetables", link: "/timetables" },
           ],
         },
-      ],
-    },
-    {
-      name: "E-Class",
-      subs: [
-        { name: "Virtual Classroom", link: "/library" },
-        { name: "Resource Library", link: "" },
       ],
     },
     {
