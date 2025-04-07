@@ -5,9 +5,9 @@ import Header from "./Header";
 
 const AppLayout = () => {
   return (
-    <div className="flex w-[100%]">
+    <div className="flex">
       <Sidebar />
-      <div className=" w-[85%]">
+      <div className="flex-1 h-[100vh] overflow-y-auto">
         <Header />
         <Outlet />
       </div>

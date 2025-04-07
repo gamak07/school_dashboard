@@ -1,37 +1,27 @@
 import React from "react";
-import DashboardOverview from "../Features/Dashboard/DashboardOverview";
-import NoticeOverview from "../Features/Dashboard/NoticeOverview";
-import RevenueOverview from "../Features/Dashboard/RevenueOverview";
-import IncomeOverview from "../Features/Dashboard/IncomeOverview";
-import ExpensesOverview from "../Features/Dashboard/ExpensesOverview";
-import AttendanceOverview from "../Features/Dashboard/AttendanceOverview";
-import LibraryOverview from "../Features/Dashboard/LibraryOverview";
-import CalendarOverview from "../Features/Dashboard/CalendarOverview";
-import BestStudentsOverview from "../Features/Dashboard/BestStudentsOverview";
-import EventsOverview from "../Features/Dashboard/EventsOverview";
-import SchoolOverview from "../Features/Dashboard/SchoolOverview";
+import ReportStats from "../Features/Dashboard/ReportStats";
+import AcademicPerformance from "../Features/Dashboard/AcademicPerformance";
+import FeesCollection from "../Features/Dashboard/FeesCollection";
+import Attendance from "../Features/Dashboard/Attendance";
+import UpcomingEvents from "../Features/Dashboard/UpcomingEvents";
+import QuickActions from "../Features/Dashboard/QuickActions";
+import RecentActivities from "../Features/Dashboard/RecentActivities";
 
 const Dashboard = () => {
   return (
-    <div className="h-[90vh] flex gap-[1rem] bg-primary p-[2rem] w-full overflow-y-auto">
-      <div className="w-[65%]">
-        <DashboardOverview />
-        <RevenueOverview />
-        <div className="w-full flex gap-[1rem]">
-          <IncomeOverview />
-          <ExpensesOverview />
-        </div>
-        <div className="w-full flex gap-[1rem]">
-          <AttendanceOverview />
-          <LibraryOverview />
-        </div>
-        <CalendarOverview />
+    <div className="p-[1rem] bg-background w-full">
+      <ReportStats />
+      <div className="mt-[2rem] flex gap-[1rem] w-full">
+        <AcademicPerformance />
+        <FeesCollection />
       </div>
-      <div className="w-[35%]">
-        <NoticeOverview />
-        <EventsOverview />
-        <BestStudentsOverview />
-        <SchoolOverview />
+      <div className="mt-[2rem] flex gap-[1rem] w-full">
+        <Attendance />
+        <UpcomingEvents />
+        <QuickActions />
+      </div>
+      <div className="mt-[2rem]">
+        <RecentActivities />
       </div>
     </div>
   );
