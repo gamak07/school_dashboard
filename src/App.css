@@ -50,5 +50,6 @@
 
 @theme {
     --shadow-md: 0 1px 5px #f0f0f0; 
+    --shadow-sm: 0 1px 2px #bce0fc; 
   }
   

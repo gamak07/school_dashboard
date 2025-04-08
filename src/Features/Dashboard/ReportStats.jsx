@@ -4,6 +4,7 @@ import { FaPlus } from "react-icons/fa";
 import { PiStudentFill } from "react-icons/pi";
 import { FaArrowDownLong } from "react-icons/fa6";
 import { formatCurrency } from "../../helpers/formatCurrency";
+import { Link } from "react-router-dom";
 
 const ReportStats = () => {
   const today = new Date();
@@ -16,11 +17,13 @@ const ReportStats = () => {
         <h1 className="text-black text-[25px] font-bold">Dashboard Overview</h1>
         <div className="flex items-center gap-[10px]">
           <p className="text-darkgray">{formatted}</p>
-          <Button className="flex items-center px-[16px] py-[10px] rounded-[5px] text-white bg-secondary hover:bg-accent">
-            <span className="text-white">
-              <FaPlus />
-            </span>
-            New Report
+          <Button className=" rounded-[5px] text-white bg-secondary hover:bg-accent">
+            <Link to="/new_report" className="flex items-center px-[16px] py-[10px]">
+              <span className="text-white">
+                <FaPlus />
+              </span>
+              New Report
+            </Link>
           </Button>
         </div>
       </div>
@@ -63,7 +66,9 @@ const ReportStats = () => {
         <div className="flex bg-white rounded-[10px] shadow-md h-[10rem] border-l-5 border-orange py-[1rem] px-[10px]">
           <div>
             <p className="text-darkgray text-[15px]">Fees Collected</p>
-            <h1 className="text-black font-bold text-[25px]">{formatCurrency(456345)}</h1>
+            <h1 className="text-black font-bold text-[25px]">
+              {formatCurrency(456345)}
+            </h1>
             <p className="flex items-center gap-[3px] text-orange">
               <span>
                 <FaArrowDownLong />
